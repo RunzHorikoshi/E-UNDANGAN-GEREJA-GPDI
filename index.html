@@ -682,6 +682,7 @@
   <option value="GKTI MENTONYEK DALAM">GKTI MENTONYEK DALAM</option>
   <option value="GKTU MENTONYEK PROYEK">GKTU MENTONYEK PROYEK</option>
   <option value="GKE BAKUNG">GKE BAKUNG</option>
+  <option value="GPDI KARANGAN">GPDI KARANGAN</option>
   <option value="Lainnya">Lainnya (ketik sendiri)</option>
 </select>
 <input type="text" id="gereja-lain" placeholder="Tulis nama gereja..." style="display:none;margin-top:0.5rem">
@@ -925,7 +926,18 @@
     }
   }
 </script>
+<script>
+const selectGereja = document.getElementById("gereja");
+const inputLain = document.getElementById("gereja-lain");
 
+selectGereja.addEventListener("change", function() {
+    if (this.value === "Lainnya") {
+        inputLain.style.display = "block"; // munculin
+    } else {
+        inputLain.style.display = "none"; // sembunyiin
+    }
+});
+</script>
 
 </body>
 </html>
