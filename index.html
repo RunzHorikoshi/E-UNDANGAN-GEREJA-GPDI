@@ -675,8 +675,16 @@
     </div>
     <div class="form-group">
       <label for="gereja">Jemaat / Gereja Asal</label>
-      <input type="text" id="gereja" placeholder="Contoh: GPdI KARANGAN">
-      <span class="error-text" id="err-gereja">Nama jemaat wajib diisi</span>
+      <select id="gereja">
+  <option value="">— Pilih gereja asal —</option>
+  <option value="KGBI MENTONYEK PROYEK">KGBI MENTONYEK PROYEK</option>
+  <option value="KGBI MENTONYEK DALAM">KGBI MENTONYEK DALAM</option>
+  <option value="GKTI MENTONYEK DALAM">GKTI MENTONYEK DALAM</option>
+  <option value="GKTU MENTONYEK PROYEK">GKTU MENTONYEK PROYEK</option>
+  <option value="GKE BAKUNG">GKE BAKUNG</option>
+  <option value="Lainnya">Lainnya (ketik sendiri)</option>
+</select>
+<input type="text" id="gereja-lain" placeholder="Tulis nama gereja..." style="display:none;margin-top:0.5rem">
     </div>
     <button class="btn-primary" id="btn-daftar" onclick="submitForm()">Konfirmasi Kehadiran</button>
   </div>
@@ -770,7 +778,7 @@
 <footer>
   &copy; 2026 Gereja GPdI
   
-  &nbsp;·&nbsp; KKR Paskah — Hidup dalam Kebangkitan-Nya
+  &nbsp;·&nbsp; KKR Paskah — Masa depan mu sunguh ada
 </footer>
 
 <div class="toast" id="toast"></div>
